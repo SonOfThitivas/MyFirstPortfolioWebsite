@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karn Suksomkit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!--start navbar section -->
+    <section id="nav">
+        <nav>
+            <div class="container">
+                <div id="logo">
+                    <h1><a href="index.html"><span>K</span>a<span id="rn">rn</span> <span>S</span>uk<span id="rn">som</span>kit</a></h1>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- end navbar section -->
+
+    <!-- start home section -->
+    <section id="home">
+        <div class="container">
+            <div class="text">
+                <span>Hi!</span> I'm Karn Suksomkit<br>
+                <span>And</span> this is my fisrt<br>
+                <span>Portfolio Website.</span>
+            </div>
+            <div class="karn">
+                <img src="image/kARN.jpg" alt="Karn" width="500px">
+            </div>
+        </div>
+    </section>
+    <!-- end home section -->
+
+    <!-- start profile section -->
+    <section id="profile">
+        <div class="container">
+            <div class="gallery">
+                <a href="https://en.wikipedia.org/wiki/Nonthaburi" target="_blank">
+                    <img src="image/nonthaburi.jpg" width="300px" height="300px">
+                </a>
+                <div class="gallery-text">
+                    <h1>Nonthaburi</h1>
+                    <p>my hometown</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <a href="https://www.facebook.com/profile.php?id=100057256697573" target="_blank">
+                    <img src="image/prem.jpg" width="300px">
+                </a>
+                <div class="gallery-text">
+                    <h1>Premprachawatthana School</h1>
+                    <p>my elementary school</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <a href="https://tpn.ac.th/" target="_blank">
+                    <img src="image/tpn.jpg" width="300px">
+                </a>
+                <div class="gallery-text">
+                    <h1>Triamudomsuksapatthanakarn Nonthaburi</h1>
+                    <p>my high school</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end profile section -->
+
+    <!-- start work section -->
+    <section id="work">
+        <div class="container">
+            <div class="slideshow">
+                <img class="mySlides" src="image/slide1.jpg">
+                <img class="mySlides" src="image/slide2.jpg">
+                <img class="mySlides" src="image/slide3.jpg">
+                <img class="mySlides" src="image/slide4.jpg">
+                <img class="mySlides" src="image/slide5.jpg">
+                <img class="mySlides" src="image/slide6.jpg">
+                <img class="mySlides" src="image/slide7.jpg">
+                <img class="mySlides" src="image/slide8.jpg">
+            </div>
+            <!-- script for slideshow -->
+            <script>
+                var slideIndex = 0;
+                carousel();
+        
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {slideIndex = 1}
+                    x[slideIndex-1].style.display = "block";
+                    setTimeout(carousel, 3000); // Change image every 2 seconds
+                }
+            </script>
+            <div class="text">
+                <p class="introduce">
+                    ผมตัดสินใจที่จะเขียนโปรแกรม เพราะ เป็นคนชอบอยู่กับคอมพิวเตอร์เป็นเวลานาน เก่งวิชาคณิตศาสตร์ และอ่านภาษาอังกฤษเป็น ผมเริ่มโค้ดดิ้งตั้งแต่อายุ 15 ปี หรือ ม.3 ภาษาแรกที่เขียนคือ Python เป็นภาษาที่เข้าใจง่ายและอ่านง่าย เหมาะกับการเริ่มเรียนโค้ดดิ้ง ต่อมาผมได้มีโปรเจกท์การแข่งขันหุ่นยนต์ ผมจึงเริ่มศึกษาภาษา C และไมโครคอนโทลเลอร์ Arduino สิ่งที่ผมได้คือ ทักษะการโค้ดดิ้ง โลจิก อากอริทึมที่ดีขึ้น และพึ้นฐานไฟฟ้า ผ่านมาเรื่อยๆ ผมศึกษาหลายอย่างมากมาย เช่น การเขียนเว็บไซต์ด้วย HTML และ CSS, ศึกษาภาษาใหม่ๆ JavaScript C# SQL, ทำโปรเจกต์ง่ายๆ เช่น โกงเกม 24, ลองเขียนเกมด้วย Lua Unity และเขียนแอพด้วย Flutter Dart
+                </p>
+                <p class="aboutweb">
+                    นี่เป็นเว็บไซต์ Portfolio แรกของผมที่เขียนด้วย HTML,CSS และ JavaScript ที่ Responsive กับคอมพิวเตอร์เท่านั้น เพื่อฝึกทักษะการโค้ดดิ้งและการออกแบบ
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end work section -->
+
+    <!-- start contact section -->
+    <section id="contact">
+        <footer class="container">
+            <div><i class="bi bi-envelope-at-fill">     karnsuksomkitforwork@gmail.com</i></div>
+            <div><a href="https://github.com/SonOfThitivas" target="_blank"><i class="bi bi-github">   SonOfThitivas</i></a></div>
+            <div><i class="bi bi-line">      @googlekarn</i></div>
+        </footer>
+    </section>
+    <!-- end contact section -->
+</body>
+</html>
